@@ -1,0 +1,25 @@
+#include<iostream>
+using namespace std;
+int main()
+{
+    int n,n1,n2,n3,c=0;
+    cin>>n;
+    for(int i=0;i<n;i++)
+    {
+         cin>>n1>>n2>>n3;
+         if(n1==1&&n2==1)
+         {
+              c++;
+         }
+         else if(n2==1&&n3==1)
+         {
+               c++;
+         }
+          else if(n1==1&&n3==1)
+          {
+              c++;
+          }
+    }
+               cout<<c;
+    return 0;
+}
